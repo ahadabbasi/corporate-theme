@@ -1,0 +1,16 @@
+{
+  "name": "amini",
+  "version": "1.0.0",
+  "description": "This is template for amini group",
+  "main": "glupfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahad Abbasi",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.1",
+    "gulp-pug": "^4.0.1"
+  }
+}
