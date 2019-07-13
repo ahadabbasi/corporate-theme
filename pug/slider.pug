@@ -6,7 +6,7 @@
     .carousel-inner
         - var list = ["First", "Second", "Third"]
         each item in list
-            .carousel-item.active
+            div(class=(item === 'First' ? "carousel-item active" : "carousel-item"))
                 svg.bd-placeholder-img.bd-placeholder-img-lg.d-block.w-100.h-100(width="800", xmlns="http://www.w3.org/2000/svg", preserveAspectRatio="xMidYMid slice", focusable="false", role="img", aria-label=`Placeholder: ${item} slide`)
                     title Placeholder
                     rect(width="100%", height="100%", fill="#666")
@@ -15,7 +15,7 @@
     
     a(class="carousel-control-prev", href="#carouselExampleIndicators", role="button", data-slide="next")
         span(class="carousel-control-prev-icon", aria-hidden="true")
-        span.sr-only Previous
+        span.sr-only Next
     a(class="carousel-control-next", href="#carouselExampleIndicators", role="button", data-slide="prev")
         span(class="carousel-control-next-icon" aria-hidden="true")
-        span.sr-only Next
+        span.sr-only Previous
