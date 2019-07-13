@@ -1,3 +1,7 @@
+.navbar-nav.shadow{
+    box-shadow: 0px 4px 44px 0px rgba(0,0,0,.14)
+}
+
 .navbar-nav > li {
     position: relative;
 }
@@ -8,6 +12,7 @@
     left: 0;
     position: absolute;
     right: 0;
+    margin-bottom: 2px;
 }
 
 .h-100{
