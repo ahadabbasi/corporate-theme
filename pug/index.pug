@@ -8,18 +8,19 @@ html(lang="fa",dir="rtl")
             button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
                 span.navbar-toggler-icon
             div.collapse.navbar-collapse#navbarSupportedContent
-                ul.navbar-nav.mr-auto.text-right
-                    li.nav-item.active
-                        a(class="nav-link", href="#") خانه
-                            span.sr-only (current)
-                    li.nav-item
-                        a(class="nav-link", href="#") درباره ما
-                    li.nav-item
-                        a(class="nav-link", href="#") تماس با ما
-                form.form-inline.position-relative
-                    input(class="form-control w-100", type="search", placeholder="جستجو", aria-label="Search")
-                    button(class="btn btn-link position-absolute", type="submit", style="left:0px;") 
-                        i.fas.fa-search
+                div.mr-auto
+                    form.form-inline.position-relative.my-2.my-lg-0.float-lg-left
+                        input(class="form-control w-100", type="search", placeholder="جستجو", aria-label="Search")
+                        button(class="btn btn-link position-absolute", type="submit", style="left:0px;") 
+                            i.fas.fa-search
+                    ul.navbar-nav.mr-auto.text-right.float-lg-right.px-3
+                        li.nav-item.active
+                            a(class="nav-link", href="#") خانه
+                                span.sr-only (current)
+                        li.nav-item
+                            a(class="nav-link", href="#") درباره ما
+                        li.nav-item
+                            a(class="nav-link", href="#") تماس با ما
 
         //Slide show
         include slider
