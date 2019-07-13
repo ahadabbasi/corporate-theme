@@ -4,6 +4,7 @@
   "description": "This is template for amini group",
   "main": "glupfile.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ahad Abbasi",
