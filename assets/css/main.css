@@ -51,3 +51,8 @@
 .scrollanimate .show .from-right {
     transform: translateX(0px);
 }
+
+.scrollanimate.blur{
+    filter: blur(0px);
+    transition: all 0.5s ease-in-out 0s;
+}

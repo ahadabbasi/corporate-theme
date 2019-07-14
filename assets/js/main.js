@@ -10,6 +10,18 @@ $(document).ready(function(){
                 $(item).addClass('show');
             }
         });
+
+        var $blur = $(".scrollanimate.blur");
+        var bluerTrue = false;
+
+        if(wScroll > $blur.offset().top + ($blur.height() / 2) && wScroll < $blur.offset().top + $blur.height()){
+            $blur.css("filter", `blur(${(wScroll / $blur.height()) * 4}px)`);
+            
+            //$blur.css("filter", "blur()")
+        }else if(wScroll < $blur.offset().top + ($blur.height() / 2) && $blur.css('filter') != "blur(0px)"){
+            $blur.css("filter", "blur(0px)")
+            
+        }
     });
 
 });
