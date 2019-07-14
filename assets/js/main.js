@@ -19,7 +19,7 @@ $(document).ready(function(){
             
             //$blur.css("filter", "blur()")
         }else if(wScroll < $blur.offset().top + ($blur.height() / 2) && $blur.css('filter') != "blur(0px)"){
-            $blur.css("filter", "blur(0px)")
+            $blur.css("filter", "blur(0px)");
             
         }
     });
