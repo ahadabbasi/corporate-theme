@@ -27,6 +27,21 @@ html(lang="fa", dir="rtl")
 
         main(role="main", class="container-fluid position-reletive")
             
+            section.aboutus.scrollanimate.mb-5.bg-secondary.py-5(style="margin:-3rem -15px 0px;")
+                .row.justify-content-center.hide
+                    .col-10.position-relative.text-left
+                        img(src="assets/img/about.jpg", alt="درباره ما", class="img-fluid rounded")
+                        .position-absolute.bg-light.rounded.w-50.text-right.from-top.p-5(style="top:25%")
+                            h3.mb-3.
+                                درباره ما
+                            p.text-justify.
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+                            p.mt-1.mb-3.
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
+                            .row.m-0
+                                a.btn.btn-info.mr-auto(href="#") ما را بیشتر بشناسید
+
+
 
             section.interview.scrollanimate.position-relative
                     .row.justify-content-center
@@ -63,9 +78,5 @@ html(lang="fa", dir="rtl")
                                                     a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
             
             include postslider
-                        
-
-
-
 
         include footer
