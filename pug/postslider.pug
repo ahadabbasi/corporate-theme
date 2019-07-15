@@ -1,0 +1,39 @@
+section.blog.bg-light.position-absolute.py-3(style="left:0px;right:0px;")
+    .row.justify-content-center.m-0.my-3
+        .col-4
+            h3.text-center اخرین مطالب بلاگ
+            hr
+
+    div(class="carousel slide", data-ride="carousel", id="postCarousel", data-interval="false")
+
+        .container
+            .row
+                .col-12.text-right.mb-4
+                    a(class="btn btn-secondary carousel-control-prev d-inline position-relative mx-2", href="#postCarousel", role="button", data-slide="prev")
+                        i(class="fas fa-chevron-right", aria-hidden="true")
+                        span.sr-only Previous
+                    a(class="btn btn-secondary carousel-control-next d-inline position-relative mx-2", href="#postCarousel", role="button", data-slide="next")
+                        i(class="fas fa-chevron-left" aria-hidden="true")
+                        span.sr-only Next
+
+        .container.carousel-inner
+            - for(var j = 0; j < 4; j = j + 3)
+                div(class=`carousel-item${j == 0 ? " active" : ""}`)
+                    .row.d-flex.justify-content-center.py-3.w-100
+                        - for(var i = 1; i < 4; i++)
+                            .col-10.col-lg-4.mb-3.mb-lg-0
+                                .card.border-0
+                                    img(src=`assets/img/post-${i+j}.jpg`, alt="post-${i}", class="card-img-top")
+                                    div.row.mb-0.mt-1.px-4
+                                        span
+                                            i.fas.fa-user
+                                            a(href="#", class="text-decoration-none mx-1") احد عباسی
+                                        span.mr-auto
+                                            i.fas.fa-calendar-alt
+                                            a(href="#", class="text-decoration-none mx-1") 1389/04/28
+                                    .card-body
+                                        h5.title عنوان متن
+                                        p.card-text.text-justify.
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+                                        p.text-left
+                                            a(href="#", class="text-decoration-none") ادامه مطلب
