@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/IRANSansWebBold.eot");
+    src: url("../fonts/IRANSansWebBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWebBold.woff2") format("woff2"), url("../fonts/IRANSansWebBold.woff") format("woff"), url("../fonts/IRANSansWebBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/IRANSansWebMedium.eot");
+    src: url("../fonts/IRANSansWebMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWebMedium.woff2") format("woff2"), url("../fonts/IRANSansWebMedium.woff") format("woff"), url("../fonts/IRANSansWebMedium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/IRANSansWebLight.eot");
+    src: url("../fonts/IRANSansWebLight.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWebLight.woff2") format("woff2"), url("../fonts/IRANSansWebLight.woff") format("woff"), url("../fonts/IRANSansWebLight.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/IRANSansWebUltraLight.eot");
+    src: url("../fonts/IRANSansWebUltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWebUltraLight.woff2") format("woff2"), url("../fonts/IRANSansWebUltraLight.woff") format("woff"), url("../fonts/IRANSansWebUltraLight.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/IRANSansWeb.eot");
+    src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWeb.woff2") format("woff2"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype")
+}
