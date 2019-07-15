@@ -45,6 +45,11 @@ body {
     transform: translateX(40px);
 }
 
+.scrollanimate .from-top {
+    transition: all 0.4s ease-in-out 0s;
+    transform: translateY(-100px);
+}
+
 .scrollanimate .hide.show {
     opacity: 1;
 }
@@ -55,6 +60,11 @@ body {
 
 .scrollanimate .show .from-right {
     transform: translateX(0px);
+}
+
+.scrollanimate .show .from-top {
+    transition: all 0.4s ease-in-out 0s;
+    transform: translateY(0px);
 }
 
 .scrollanimate.blur {
