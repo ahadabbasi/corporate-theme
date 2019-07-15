@@ -25,7 +25,7 @@ html(lang="fa", dir="rtl")
         //Slide show
         include slider
 
-        main(role="main", class="container-fluid")
+        main(role="main", class="container-fluid position-reletive")
             
 
             section.interview.scrollanimate.position-relative
@@ -61,6 +61,29 @@ html(lang="fa", dir="rtl")
                                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                                 p.text-left
                                                     a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
+            section.blog.bg-light.position-absolute.py-3(style="left:0px;right:0px;")
+                .row.justify-content-center.m-0.my-3
+                    .col-4
+                        h3.text-center اخرین مطالب بلاگ
+                        hr
+
+                div(class="carousel slide", data-ride="carousel", id="postCarousel", data-interval="false")
+                    .container.carousel-inner
+                        - for(var j = 0; j < 4; j = j + 3)
+                            div(class=`carousel-item${j == 0 ? " active" : ""}`)
+                                .row.d-flex.justify-content-center.py-3.w-100
+                                    - for(var i = 1; i < 4; i++)
+                                        .col-4
+                                            .card.border-0
+                                                img(src=`assets/img/post-${i+j}.jpg`, alt="post-${i}", class="card-img-top")
+                                                small.text-muted.d-inline نویسنده
+                                                a(href="#", class="text-decoration-none d-inline") احد عباسی
+                                                .card-body
+                                                    h5.title عنوان متن
+                                                    p.card-text.
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
+
+
 
 
         include footer
