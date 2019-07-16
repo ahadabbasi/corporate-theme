@@ -3,32 +3,34 @@ html(lang="fa", dir="rtl")
     include header
     body.text-right
 
-        nav(class="navbar navbar-expand-lg navbar-light shadow")
-            a(class="navbar-brand", href="#") محل لگو شما
-            button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
-                span.navbar-toggler-icon
-            div.collapse.navbar-collapse#navbarSupportedContent
-                div.mr-auto
-                    form.form-inline.position-relative.my-2.my-lg-0.float-lg-left
-                        input(class="form-control w-100", type="search", placeholder="جستجو", aria-label="Search")
-                        button(class="btn btn-link position-absolute", type="submit", style="left:0px;") 
-                            i.fas.fa-search
-                    ul.navbar-nav.mr-auto.text-right.float-lg-right.px-3
-                        li.nav-item.active
-                            a(class="nav-link", href="#") خانه
-                                span.sr-only (current)
-                        li.nav-item
-                            a(class="nav-link", href="#") درباره ما
-                        li.nav-item
-                            a(class="nav-link", href="#") تماس با ما
+        header
 
-        //Slide show
-        include slider
+            nav(class="navbar navbar-expand-lg navbar-light shadow")
+                a(class="navbar-brand", href="#") محل لگو شما
+                button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                    span.navbar-toggler-icon
+                div.collapse.navbar-collapse#navbarSupportedContent
+                    div.mr-auto
+                        form.form-inline.position-relative.my-2.my-lg-0.float-lg-left
+                            input(class="form-control w-100", type="search", placeholder="جستجو", aria-label="Search")
+                            button(class="btn btn-link position-absolute", type="submit", style="left:0px;") 
+                                i.fas.fa-search
+                        ul.navbar-nav.mr-auto.text-right.float-lg-right.px-3
+                            li.nav-item.active
+                                a(class="nav-link", href="#") خانه
+                                    span.sr-only (current)
+                            li.nav-item
+                                a(class="nav-link", href="#") درباره ما
+                            li.nav-item
+                                a(class="nav-link", href="#") تماس با ما
+
+            //Slide show
+            include slider
 
         main(role="main", class="container-fluid position-reletive")
             
             section.aboutus.scrollanimate.mb-5.bg-secondary.py-5(style="margin:-3rem -15px 0px;")
-                .row.justify-content-center.hide
+                .row.justify-content-center.hide.mx-0
                     .col-10.position-relative.text-left
                         img(src="assets/img/about.jpg", alt="درباره ما", class="img-fluid rounded")
                         .position-lg-absolute.bg-light.rounded.w-lg-50.top-lg-25.w-100.text-right.from-top.p-5
