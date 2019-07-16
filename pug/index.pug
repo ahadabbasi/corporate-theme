@@ -31,7 +31,7 @@ html(lang="fa", dir="rtl")
                 .row.justify-content-center.hide
                     .col-10.position-relative.text-left
                         img(src="assets/img/about.jpg", alt="درباره ما", class="img-fluid rounded")
-                        .position-absolute.bg-light.rounded.w-50.text-right.from-top.p-5(style="top:25%")
+                        .position-lg-absolute.bg-light.rounded.w-lg-50.top-lg-25.w-100.text-right.from-top.p-5
                             h3.mb-3.
                                 درباره ما
                             p.text-justify.
@@ -43,40 +43,57 @@ html(lang="fa", dir="rtl")
 
 
 
-            section.interview.scrollanimate.position-relative
-                    .row.justify-content-center
-                        .col-4.text-center.mb-3
-                            h3.
-                                معرفی شرکت های زیر مجموعه
-                            hr
-                    - for (var i = 1; i < 7; i = i + 2)
-                        .row
-                            .col-12.col-lg-6.hide
-                                .row.justify-content-center
-                                    .col-10.shadow.p-3.my-4
-                                        .row
-                                            .col-5.col-lg-6
-                                                img(src=`./assets/img/logo-${i}.png`, class="img-fluid from-right", alt=`logo${i}`)
-                                            .col-7.col-lg-6
-                                                h4.mb-3 نام شرکت
-                                                p.mb-3.text-justify.
-                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                                                p.text-left
-                                                    a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
-                                    
-                            .col-12.col-lg-6.hide
-                                .row.justify-content-center
-                                    .col-10.shadow.p-3.my-4
-                                        .row
-                                            .col-5.col-lg-6
-                                                img(src=`./assets/img/logo-${i+1}.png`, class="img-fluid from-right", alt=`logo${i+1}`)
-                                            .col-7.col-lg-6
-                                                h4.mb-3 نام شرکت
-                                                p.mb-3.text-justify.
-                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                                                p.text-left
-                                                    a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
+            section.interview.scrollanimate.position-relative.mb-3
+                .row.justify-content-center
+                    .col-10.col-lg-4.text-center.mb-3
+                        h3.
+                            معرفی شرکت های زیر مجموعه
+                        hr
+                - for (var i = 1; i < 7; i = i + 2)
+                    .row
+                        .col-12.col-lg-6.hide
+                            .row.justify-content-center
+                                .col-10.shadow.p-3.my-4
+                                    .row
+                                        .col-5.col-lg-6
+                                            img(src=`./assets/img/logo-${i}.png`, class="img-fluid from-right", alt=`logo${i}`)
+                                        .col-7.col-lg-6
+                                            h4.mb-3 نام شرکت
+                                            p.mb-3.text-justify.
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            p.text-left
+                                                a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
+                                
+                        .col-12.col-lg-6.hide
+                            .row.justify-content-center
+                                .col-10.shadow.p-3.my-4
+                                    .row
+                                        .col-5.col-lg-6
+                                            img(src=`./assets/img/logo-${i+1}.png`, class="img-fluid from-right", alt=`logo${i+1}`)
+                                        .col-7.col-lg-6
+                                            h4.mb-3 نام شرکت
+                                            p.mb-3.text-justify.
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                            p.text-left
+                                                a(href="#", target="_blank", class="text-decoration-none", rel="noopener noreferrer") ادامه مطلب
             
             include postslider
+
+            section.subcribe.my-5.p-1
+                .row.justify-content-center
+                    .col-10.col-lg-4.text-center.mb-3
+                        h3.
+                            عضویت در خبرنامه
+                        hr
+
+                .row.justify-content-center
+                    .col-10.col-lg-6
+                        form
+                            .row
+                                .col-10.m-0.pl-0
+                                    input(type="text", class="form-control", style="border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important;")
+                                .col-2.m-0.pr-0
+                                    button(class="btn btn-block btn-primary", style="border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important;")
+                                        i.fas.fa-paper-plane
 
         include footer
